@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags to define character encoding and make the page responsive -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- The title of the webpage shown in the browser tab -->
+    <title>Responsive Navigation Bar</title>
+
+    <!-- Link to the external CSS file for styling -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation bar starts here -->
+    <nav class="navbar">
+        <!-- Menu toggle button for mobile view; it's displayed as three bars (hamburger icon) -->
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span> <!-- Represents one bar in the hamburger icon -->
+            <span class="bar"></span> <!-- Represents another bar in the hamburger icon -->
+            <span class="bar"></span> <!-- Represents the third bar in the hamburger icon -->
+        </div>
+
+        <!-- Unordered list that contains the navigation menu items -->
+        <ul class="nav-menu">
+            <!-- Individual navigation items -->
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+
+            <!-- Dropdown menu for 'Services' with sub-menu items -->
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Services</a> <!-- Main item that triggers the dropdown -->
+                <!-- The dropdown content containing the sub-menu items -->
+                <div class="dropdown-content">
+                    <a href="#">Web Development</a>
+                    <a href="#">Mobile App Development</a>
+                    <a href="#">UI/UX Design</a>
+                </div>
+            </li>
+
+            <!-- Another individual navigation item -->
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

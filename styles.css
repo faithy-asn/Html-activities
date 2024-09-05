@@ -1,0 +1,85 @@
+/* Resetting default margin and padding */
+body, ul {
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+}
+
+/* Navbar styles */
+.navbar {
+    width: 100%; /* Navbar takes full width of the page */
+    max-width: 800px; /* Maximum width is set to 800px */
+    margin: 0 auto; /* Centers the navbar horizontally */
+    background-color: #f07416; /* Sets the background color of the navbar */
+    text-align: center; /* Centers the text within the navbar */
+    position: relative; /* Position is set relative for absolute positioning of child elements */
+}
+
+/* Menu toggle styles for mobile */
+.menu-toggle {
+    display: none; /* Hidden by default and shown only on smaller screens */
+    cursor: pointer; /* Changes cursor to a pointer when hovered */
+    position: absolute; /* Positioned relative to the navbar */
+    top: 15px; /* Position from the top */
+    right: 20px; /* Position from the right */
+}
+
+.menu-toggle .bar {
+    display: block; /* Displays each bar as a block element */
+    width: 25px; /* Width of each bar */
+    height: 3px; /* Height of each bar */
+    margin: 5px auto; /* Centers each bar and adds vertical space between them */
+    background-color: white; /* Color of the bars */
+    transition: all 0.3s ease-in-out; /* Adds a smooth transition effect */
+}
+
+/* Styling for the navigation menu */
+.nav-menu {
+    list-style-type: none; /* Removes default bullet points from list */
+    padding: 0; /* Removes padding */
+}
+
+.nav-menu li {
+    display: inline-block; /* Displays list items in a horizontal row */
+    position: relative; /* Position relative to enable absolute positioning of dropdowns */
+}
+
+.nav-menu a {
+    display: block; /* Each link is a block-level element */
+    color: white; /* Text color */
+    padding: 14px 20px; /* Padding inside each link */
+    text-decoration: none; /* Removes underline from links */
+    font-size: 16px; /* Font size for links */
+}
+
+.nav-menu a:hover {
+    background-color: #fa5d09; /* Changes background color on hover */
+}
+
+/* Dropdown menu styles */
+.dropdown-content {
+    display: none; /* Hidden by default and shown only on hover */
+    position: absolute; /* Positioned relative to the parent element */
+    background-color: #e86101; /* Background color of the dropdown */
+    min-width: 160px; /* Minimum width of the dropdown */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Adds a shadow effect to the dropdown */
+    z-index: 1; /* Ensures dropdown appears above other content */
+}
+
+.dropdown-content a {
+    color: white; /* Text color */
+    padding: 12px 16px; /* Padding inside each dropdown link */
+    text-decoration: none; /* Removes underline from links */
+    display: block; /* Each link is a block-level element */
+    text-align: left; /* Aligns text to the left */
+}
+
+.dropdown-content a:hover {
+    background-color: #575757; /* Changes background color on hover */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Shows the dropdown menu when hovering over the parent */
+}
+
+/* Responsive design for mobile screens */
+@media screen and (max-width: 768px) {
